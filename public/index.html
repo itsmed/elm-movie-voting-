@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My Elm Http Project</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Enter a Sub Reddit below, or click <a href="movies.html">here</a> to find movies</h1>
+    <div id="elm-things"></div>
+    <script src="getReddit.js"></script>
+    <script>
+      var node = document.getElementById('elm-things');
+      var app = Elm.Main.embed(node);
+      console.log(node);
+    </script>
+  </body>
+</html>
